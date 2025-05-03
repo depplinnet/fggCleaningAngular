@@ -6,6 +6,12 @@
     <mat-label>Add the service here</mat-label>
     <textarea matInput [(ngModel)]="message"></textarea>
   </mat-form-field>
+
+  @if (message()) {
+    <li>
+      You chose: <em>{{message()}}</em>
+    </li>
+  }
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button (click)="onNoClick()">No Thanks</button>
