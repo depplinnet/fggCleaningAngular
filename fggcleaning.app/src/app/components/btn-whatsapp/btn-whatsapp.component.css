@@ -1,27 +1,22 @@
-@use '@angular/material' as mat;
-
-
-:root {
-  
-    container-color: orange,
-  ;
+mat-nav-list {
+  height: 400px;
 }
 
-
-
+.btnContact {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
 
 .btnWhatsapp {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 
 mat-form-field {
-  width: 100%; /* Hace que el campo de texto ocupe todo el ancho del contenedor */
+  width: 95%; /* Hace que el campo de texto ocupe todo el ancho del contenedor */
 }
 
 mat-dialog-content {

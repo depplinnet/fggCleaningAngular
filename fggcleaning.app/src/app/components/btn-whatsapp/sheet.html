@@ -1,0 +1,35 @@
+<mat-nav-list>
+  <h3 style="text-align: center;">{{ preguntaName }}</h3>
+ 
+    
+    <ol>
+          <li>
+            <mat-form-field>
+              <mat-label> {{ preguntaName }} </mat-label>
+              <input matInput [(ngModel)]="name" />
+            </mat-form-field>
+          </li>
+
+          <li>
+            <mat-form-field>
+              <mat-label> {{ preguntaPhone }} </mat-label>
+              <input matInput [(ngModel)]="phone" />
+            </mat-form-field>
+          </li>
+
+          <li>
+            <mat-form-field>
+              <mat-label> {{ preguntaEmail }} </mat-label>
+              <input matInput [(ngModel)]="email" />
+            </mat-form-field>
+          </li>
+          
+          
+          <li>
+            <button mat-raised-button (click)="openDialog()">Next</button>
+          </li>
+          
+        </ol>
+  
+
+</mat-nav-list>
