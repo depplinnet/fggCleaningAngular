@@ -4,7 +4,9 @@ import { BtnWhatsappComponent } from './components/btn-whatsapp/btn-whatsapp.com
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, BtnWhatsappComponent],
+  imports: [
+    RouterOutlet,
+    BtnWhatsappComponent, ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

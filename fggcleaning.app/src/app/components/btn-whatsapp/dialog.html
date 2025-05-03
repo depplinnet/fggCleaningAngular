@@ -1,15 +1,15 @@
 <h2 mat-dialog-title>Hi {{data.name}}</h2>
 <mat-dialog-content>
   <p>Tell us, what service are you interested in?</p>
+
   <mat-form-field>
     <mat-label>Add the service here</mat-label>
-    <input matInput [(ngModel)]="message" />
+    <textarea matInput [(ngModel)]="message"></textarea>
   </mat-form-field>
 </mat-dialog-content>
 <mat-dialog-actions>
   <button mat-button (click)="onNoClick()">No Thanks</button>
   <a href="https://api.whatsapp.com/send?phone=573024581809&text=Hi,%20I'm%20interested%20in%20these%20services:%20{{ message() }}..." target="_blank" rel="noopener noreferrer">
-    <button  mat-button [mat-dialog-close]="message()" cdkFocusInitial>Sudmit</button>  
+    <button mat-button [mat-dialog-close]="message()" cdkFocusInitial>Submit</button>  
   </a>
-  
 </mat-dialog-actions>
